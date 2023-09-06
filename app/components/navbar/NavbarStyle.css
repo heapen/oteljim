@@ -34,3 +34,27 @@
     border-bottom-color: #000;
     border-color: #000;
 }
+.usermenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+}
+.openmenu {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(156, 163, 175, 05);
+    width: 150px;
+    top: 64px;
+    right: 0;
+
+}
+.openmenu-user {
+    font-size: 1.125rem;
+    padding: 0.5rem 0.75rem;
+    background-color: #f7fafc;
+    cursor: pointer;
+}
