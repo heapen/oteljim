@@ -2,11 +2,35 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
-    background-color: rgb(243 244 246);
-    padding-left: 28px;
-    padding-right: 28px;
+    height: 4rem;
+    background-color: #f7fafc;
+    padding: 0 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .logo{
     font-size: 3rem;
+}
+.categories {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.categories-items {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+.categories-items-name {
+    letter-spacing: 0.05em;
+}
+.selected {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+    border-color: #000;
 }
