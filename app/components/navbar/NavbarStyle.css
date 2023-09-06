@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background-color: rgb(243 244 246);
+    padding-left: 28px;
+    padding-right: 28px;
+}
+.logo{
+    font-size: 3rem;
+}

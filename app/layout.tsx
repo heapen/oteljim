@@ -1,9 +1,14 @@
 import Navbar from "./components/navbar/Navbar"
+import {Nunito} from 'next/font/google'
+
+const newFont = Nunito({
+    subsets: ['latin']
+})
 
 const RootLayout = ({children} : {children: React.ReactNode}) => {
   return (
    <html lang="en">
-        <body>
+        <body className={newFont.className}>
             <Navbar/>
             {children}
         </body>

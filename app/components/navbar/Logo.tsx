@@ -2,8 +2,8 @@
 
 const Logo = () => {
   return (
-    <div>
-      logo 
+    <div className="logo">
+      oteljim 
     </div>
   )
 }
