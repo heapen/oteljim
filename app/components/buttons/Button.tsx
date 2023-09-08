@@ -1,6 +1,7 @@
 'use client'
 
 import { IconType } from "react-icons";
+import './button.css'
 
 type ButtonProps = {
     onSubmit: (e:React.MouseEvent<HTMLButtonElement>) => void;
@@ -17,11 +18,12 @@ const Button:React.FC<ButtonProps> = ({
     icon: Icon
 }) => {
 
-    const selectedOutline = outline? 'button-outline-ture' : 'button-outline-false';
-    
-  return (
-    <button onClick={onSubmit} className={`${selectedOutline} button`}>
+    const selectedOutline = outline ? 'button-outline-ture':'button-outline-false'
 
+  return (
+    <button onClick={onSubmit} className={`button ${selectedOutline}`}>
+    {Icon && <Icon size={25}/>}
+    {btnLabel}
     </button>
   )
 }
